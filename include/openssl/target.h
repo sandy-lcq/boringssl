@@ -53,6 +53,10 @@
 #elif defined(__asmjs__)
 #define OPENSSL_32_BIT
 #elif defined(__myriad2__)
+#elif defined(__PPC64__)
+#define OPENSSL_64_BIT
+#elif defined(__PPC__)
+#define OPENSSL_32_BIT
 #define OPENSSL_32_BIT
 #else
 // The list above enumerates the platforms that BoringSSL supports. For these
